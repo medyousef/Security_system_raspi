@@ -18,7 +18,7 @@ if not os.path.exists("/home/pi/Desktop/project_1/pictures"):
 logging.basicConfig(filename="photo_logs.txt", level=logging.INFO)
 
 password = "yousseftest"
-with open("/home/pi/Desktop/project_1/.email_password", "r") as pswd:
+with open("/home/pi/Desktop/Security_system_raspi/.email_password", "r") as pswd:
     password=pswd.read()
 
 yag= yagmail.SMTP("youssefraspitest@gmail.com", password)
